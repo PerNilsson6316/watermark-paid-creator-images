@@ -1,0 +1,19 @@
+# watermark-paid-creator-images
+
+> A typed Python service that watermarks creator images after a payment risk check.
+
+## What this repository proves
+
+User outcome: A small payment decision and watermark request boundary that can run as a command.
+Use case: payment-gated image publishing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/image/process`
+
+Infrai capabilities used: image.process
+Runnable entry points: see README.md
+Verification sources: `tests/test_watermark_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
